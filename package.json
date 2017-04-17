@@ -1,0 +1,26 @@
+{
+  "name": "kodilla-project_1",
+  "version": "1.0.0",
+  "description": "example grunt kodilla project",
+  "main": "index.js",
+  "scripts": {
+    "test": "kodilla-tet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyryl91/kodilla_project.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Damian Domasławski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyryl91/kodilla_project/issues"
+  },
+  "homepage": "https://github.com/cyryl91/kodilla_project#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-sass": "^2.0.0"
+  }
+}
