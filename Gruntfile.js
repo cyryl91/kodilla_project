@@ -13,21 +13,22 @@ module.exports = function(grunt) {
       }
     }
   },
+	imagemin: {
+        dynamic: {
+            files: [{
+                expand: true,
+                cwd: 'images/',
+                src: ['**/*.{png,jpg,gif}'],
+                dest: 'images/build/'
+            }]
+        },
+    },
 
-  imagemin: {
-    dynamic: {
-        files: [{
-            expand: true,
-            cwd: 'images/',
-            src: ['**/*.{png,jpg,gif}'],
-            dest: 'images/build/'
-        }]
-    }
 });
   // Load the plugins tasks 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   // Default task(s).
-  
+  grunt.registerTask('default', ['sass']);
   grunt.registerTask('default', ['sass', 'imagemin']);
 };
