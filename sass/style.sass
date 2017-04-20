@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i')
+body
+	background-color: ghostwhite
+	font-family: 'Roboto', sans-serif
+
+.container
+	max-width: 1200px
+	margin: 0 auto
+*
+	box-sizing: border-box
+.row:after,
+.row:before
+	content: ""
+	display: table
+	clear: both
+/*-----------------------------------------------jumbotron/---------welcome---------------------------*/
+.jumbotron
+	height: 110vh
+	background-image: url("https://static.pexels.com/photos/8247/pexels-photo.jpg")
+	background-repeat: no-repeat
+	background-position: middle
+	background-size: cover
+
+.welcom
+	display: flex
+	flex-wrap: nowrap
+
+.welcome-text 
+	min-height: 900px
+	text-align: right
+	color: #fff
+
+	  
+.welcome-text h1
+	font-size: 3em
+	color: #fff
+	font-weight: 200px
+	padding-top: 35vh
+
+.welcome-text p
+	font-size: 1em
+	color: #fff
+
+.welcom .img-tel
+	height: 100vh
+	margin-top: 30vh
+	opacity: 0.9
+
+/*-----------------------------------------------------history---------------------------------*/
+.history .tel-margin-top
+	margin-top: 100px
+/*------------------------------------------------------gallery---------------------------------*/
+.photo_1
+	margin-top: 0
+	margin-right: 0
+	margin-bottom: 0
+	margin-left: 5%
+
+.col-photo_1 
+	height: 40vh
+	color: #fff
+
+
+.background_photo1
+	background-color: #F6999E
+
+.background_photo2
+	background-color: #615F7E
+
+.background_photo3
+	background-image: url("https://images.pexels.com/photos/69206/pexels-photo-69206.jpeg?w=940&h=650&auto=compress&cs=tinysrgb")
+	background-size: cover
+	background-position: center
+
+.background_photo4
+	background-color: #BE8DC0
+  
+.background_photo5
+	background-image: url("https://images.pexels.com/photos/192652/pexels-photo-192652.jpeg?w=940&h=650&auto=compress&cs=tinysrgb")
+	background-position: center
+	background-size: cover
+
+.background_photo6
+	background-color: #83CB9D
+
+.background_photo7
+	background-image: url("https://images.pexels.com/photos/8218/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb")
+	background-position: center
+	background-size: cover
+
+.photo_1 a
+	font-size: 20px
+	color: #FFF
+	text-decoration: none
+
+.gallery .fa
+	color: #fff
+	font-size: 20px
+/*------------------------------------------------------------------details---------------------------------*/
+.details .col-3
+	text-align: left
+/*----------------------------------------------------------jumbotron_2--------------------------------------*/
+.jumbotron_2
+	background-image: url("https://static.pexels.com/photos/132657/pexels-photo-132657.jpeg")
+	background-position: center
+	background-size: cover
+	height: 100vh
+	color: #fff
+	
+.jumbotron_2_text
+	width: 50%
+	padding: 25% 0
+
+.jumbotron_2 .fa, a
+	color: #fff
+	text-decoration: none
+	font-size: 20px
+/*------------------------------------------------------------------green------------------------------------------*/ 
+.green
+	background-color: #83CB9D
+	height: 60vh
+	color: #fff
+	display: flex
+	justify-content: center
+	align-content: center
+/*-------------------------------------------------------------------formularz--------------------------------------------*/ 
+.last
+	height: 75vh
+
+.btn
+	display: block
+	height: 7vh
+	line-height: 7vh
+	width: 20%
+	border-radius: 5px
+	text-align: center
+	color: #fff
+	background-color: lightgrey
+
+.btn_botton
+	background-color: #83CB9D
+	min-width: 40%
+
+.col-6:hover .btn_top
+	background-color: #615F7E
+
+.form_left, .form_right
+	margin: 5vh 0
+	height: 60vh
+	padding: 8%
+
+.col-6:hover .form_left
+	background-color: #fff
+	border-top: 1px solid rgba(0, 0, 0, 0.3)
+	border-right: 1px solid rgba(0, 0, 0, 0.3)
+	border-left: 1px solid rgba(0, 0, 0, 0.3)
+
+.col-6:hover .form_right
+	background-color: #fff
+	border-top: 1px solid rgba(0, 0, 0, 0.3)
+	border-right: 1px solid rgba(0, 0, 0, 0.3)
+	border-left: 1px solid rgba(0, 0, 0, 0.3)
+
+.fa
+	font-size: 2em
+	color: gray
+
+footer
+	background-color: #615F7E
+	color: #fff
+
+.send
+	width: 100%
+
+.send-left
+	width: 80%
+	float: left
+	height:  10vh
+	line-height: 6vh
+	font-size: 6vh
+
+input
+	width: 100%
+	height: 10vh
+	line-height: 6vh
+	font-size: 6vh
+
+.send-right
+	float: left
+	background-color: red
+	width: 20%
+	height: 10vh
+	line-height: 4vh
+	font-size: 4vh
+	background-color: #83CB9D
+	color: #fff
+	text-align: center
+	padding: 1vh 0
+.send .fa
+	color: #fff
+
+
+
+/*----------------------------------------------------------------- grid system---------------------*/
+[class*="col-"]
+	float: left
+	min-height: 1px
+	padding: 10px
+/*wartosci kolumn */
+.col-1
+	width: 8.33%
+.col-2
+	width: 16.66%
+.col-3
+	width: 25%
+.col-4
+	width: 33.33%
+.col-5
+	width: 41.66%
+.col-6
+	width: 50%
+.col-7
+	width: 58.33%
+.col-8
+	width: 66.66%
+.col-9
+	width: 75%
+.col-10
+	width: 83.33%
+.col-11
+	width: 91.66%
+.col-12
+	width: 100%
+/*przesuniecie w lewo , wolne miejsce w container */
+.col-offset-0
+	margin-left: 0
+.col-offset-1
+	margin-left: 8.33%
+.col-offset-2
+	margin-left: 16.66%
+.col-offset-3
+	margin-left: 25%
+.col-offset-4
+	margin-left: 33.33%
+.col-offset-5
+	margin-left: 41.66%
+.col-offset-6
+	margin-left: 50%
+.col-offset-7
+	margin-left: 58.33%
+.col-offset-8 
+	margin-left: 66.66%
+.col-offset-9 
+	margin-left: 75%
+.col-offset-10 
+	margin-left: 83.33%
+.col-offset-11 
+	margin-left: 91.66%
+
+/*# sourceMappingURL=style.css.map */
